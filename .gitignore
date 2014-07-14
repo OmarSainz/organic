@@ -1,2 +1,4 @@
-node_modules
+# Node ignores
+/node_modules/
 npm-debug.log
+.DS_Store
