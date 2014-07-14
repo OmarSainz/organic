@@ -8,11 +8,11 @@ module.exports = function Router(plasma, config) {
 	this.on('request', function(chemical, sender, callback){
 		var page = chemical.req.url.substr(1, chemical.req.url.lenght);
 		page = page == "" || page == "/" ? "index" : page;
-		self.emit (new Chemical{
+		self.emit(new Chemical({
 			type: "page",
 			page: page,
 			ready: callback
-		});
+		}));
 	});
 }
 
